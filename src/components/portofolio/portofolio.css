@@ -1,0 +1,50 @@
+.portofolio--intro {
+  font-size: 3rem;
+  margin: 20rem 0 10rem 0;
+}
+
+.portofolio--intro h5 {
+  color: white;
+}
+
+.portofolio--intro h2 {
+  color: goldenrod;
+  font-weight: bolder;
+}
+
+.portofolio--container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.portofolio--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: green;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  border: 0.1rem solid transparent;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.portofolio--item:hover {
+  border-color: goldenrod;
+  background: transparent;
+}
+/*# sourceMappingURL=portofolio.css.map */

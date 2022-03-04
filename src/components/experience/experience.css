@@ -1,0 +1,175 @@
+.experience--intro {
+  margin: 20rem 0 10rem 0;
+  font-size: 3rem;
+}
+
+.experience--intro h2 {
+  font-weight: bold;
+  color: goldenrod;
+}
+
+.experience--intro h5 {
+  color: white;
+}
+
+.experience--container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+}
+
+.experience--container div {
+  background-color: #1b9b9b;
+  padding: 2.5rem 4rem;
+  border-radius: 2rem;
+  border: 0.1rem solid transparent;
+}
+
+.work--details {
+  margin-right: 20rem;
+}
+
+.experience--work {
+  outline-style: double;
+  outline-color: white;
+  outline-width: 1rem;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.experience--work:hover {
+  -webkit-box-shadow: 0 0 1rem 1rem #73ff00;
+          box-shadow: 0 0 1rem 1rem #73ff00;
+}
+
+.experience--work h3 {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.work {
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  word-break: keep-all;
+}
+
+.work h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #d3b8f1;
+  text-decoration: underline;
+}
+
+.work h5 {
+  color: whitesmoke;
+  font-style: oblique;
+  text-align: left;
+}
+
+.work h6 {
+  color: #beb4b4;
+}
+
+.experience--technologies {
+  outline-style: double;
+  outline-color: white;
+  outline-width: 1rem;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.experience--technologies h3 {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.experience--technologies:hover {
+  -webkit-box-shadow: 0 0 1rem 1rem red;
+          box-shadow: 0 0 1rem 1rem red;
+}
+
+.technologies--details {
+  display: -ms-grid;
+  display: grid;
+  text-transform: capitalize;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.technologies {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.technologies h4 {
+  margin-left: 1.5rem;
+}
+
+@media screen and (max-width: 1630px) {
+  .experience--intro {
+    margin-left: 20rem;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .experience--intro {
+    margin-left: 0rem;
+  }
+  .experience--container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .work--details {
+    margin-right: 0em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .technologies--details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=experience.css.map */

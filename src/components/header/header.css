@@ -1,0 +1,221 @@
+.header_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5rem;
+  position: relative;
+  height: 100%;
+  z-index: 100;
+}
+
+.header_container h5 {
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.753);
+}
+
+.header_container h1 {
+  font-size: 10rem;
+  color: black;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.header_container h1:hover {
+  color: whitesmoke;
+}
+
+.header_container .header--role {
+  opacity: 0.6;
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.753);
+}
+
+.header--img {
+  z-index: 100;
+  border-radius: 3rem;
+  position: relative;
+  border-radius: 50rem 50rem 0 0;
+  margin-top: 8rem;
+}
+
+.header--img img {
+  width: 50rem;
+  height: 50rem;
+}
+
+.falseIcon {
+  display: none;
+}
+
+.activeIcon {
+  margin-top: 28rem;
+  font-size: 20rem;
+  color: goldenrod;
+  -webkit-transition: font-size 0.3s ease-out;
+  transition: font-size 0.3s ease-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.activeIcon:hover {
+  color: white;
+}
+
+.header--socials {
+  position: absolute;
+  font-size: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  top: 70%;
+  left: -10%;
+}
+
+.floating-bg {
+  width: 150vw;
+  height: 150vw;
+  background: #e2196b;
+  background: -webkit-gradient(linear, left top, right top, color-stop(52%, #e2196b), color-stop(86%, #e7b40b));
+  background: linear-gradient(90deg, #e2196b 52%, #e7b40b 86%);
+  opacity: 0.8;
+  position: absolute;
+  z-index: 50;
+  top: -125vw;
+  left: -27vw;
+  border-radius: 45%;
+  -webkit-animation: rotate 30s infinite;
+          animation: rotate 30s infinite;
+}
+
+.floating-bg:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #79143c;
+  background: -webkit-gradient(linear, left top, right top, color-stop(52%, #720e36), color-stop(86%, #665009));
+  background: linear-gradient(90deg, #720e36 52%, #665009 86%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  border-radius: 40%;
+  -webkit-animation: rotate 30s infinite;
+          animation: rotate 30s infinite;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.scroll--up {
+  position: fixed;
+  font-size: 5rem;
+  top: 80%;
+  right: 10%;
+}
+
+@media screen and (max-width: 1100px) {
+  .header_container h1 {
+    font-size: 7rem;
+  }
+  .header_container .header--role {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 1042px) {
+  .header_container {
+    padding-top: 2rem;
+  }
+  .header_container h5 {
+    font-size: 3rem;
+  }
+  .header_container h1 {
+    font-size: 5rem;
+  }
+  .header_container .header--role {
+    font-size: 2.5rem;
+  }
+  .header--img img {
+    width: 40rem;
+    height: 40rem;
+  }
+  .header--socials {
+    top: 60%;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header_container {
+    padding-top: 1rem;
+  }
+  .header_container h5 {
+    font-size: 1.5rem;
+    color: wheat;
+  }
+  .header_container h1 {
+    font-size: 3rem;
+    color: white;
+  }
+  .header_container .header--role {
+    font-size: 2rem;
+  }
+  .header--img img {
+    width: 25rem;
+    height: 25rem;
+  }
+  .header--socials {
+    font-size: 3.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 2rem;
+    position: absolute;
+    top: 110%;
+    left: 30%;
+  }
+  .scroll--up {
+    font-size: 5rem;
+  }
+}
+/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap');
+
+// VARIABLES
+$bg--color: rgb(71, 69, 69);
+// END OF VARIABLES
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  margin-left: calc(100vw - 100%);
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+body {
+  font-family: 'Kanit', sans-serif;
+  background: #2193b0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6dd5ed,
+    #2193b0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  line-height: 1.5;
+}
+
+// GENERAL STYLE
+.container {
+  width: 75%;
+  margin: 0 auto;
+  color: white;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+section {
+  margin-top: 8rem;
+  h2,
+  h5 {
+    text-align: center;
+    color: gray;
+  }
+}
+a {
+  color: #daa520;
+  transition: all 600 ms;
+  &:hover {
+    color: rgb(248, 242, 242);
+  }
+}
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: #daa520;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 0.1rem solid red;
+  transition: all 400 ms;
+  &:hover {
+    background: red;
+    color: gold;
+    border-color: transparent;
+  }
+}
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+// MEDIUM DEVICES
+@media screen and(max-width:1024px) {
+  .container {
+    width: 86%;
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+}
+// SMALL DEVICES
+@media screen and(max-width:600px) {
+  .container {
+    width: 86%;
+  }
+
+  section {
+    margin-top: 90%;
+    h2 {
+      margin-bottom: 2rem;
+    }
+  }
+}

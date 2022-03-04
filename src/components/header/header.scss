@@ -1,0 +1,181 @@
+.header_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5rem;
+  position: relative;
+  height: 100%;
+  z-index: 100;
+
+  h5 {
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 0.753);
+  }
+  h1 {
+    font-size: 10rem;
+    color: black;
+    transition: all 1s;
+    &:hover {
+      color: whitesmoke;
+    }
+  }
+  .header--role {
+    opacity: 0.6;
+    font-size: 5rem;
+    color: rgba(0, 0, 0, 0.753);
+  }
+}
+.header--img {
+  z-index: 100;
+  border-radius: 3rem;
+  position: relative;
+
+  border-radius: 50rem 50rem 0 0;
+  margin-top: 8rem;
+  img {
+    width: 50rem;
+    height: 50rem;
+  }
+}
+.falseIcon {
+  display: none;
+}
+.activeIcon {
+  margin-top: 28rem;
+  font-size: 20rem;
+  color: goldenrod;
+  transition: font-size 0.3s ease-out;
+  transform: scale(1);
+  transition: all 1s ease;
+  &:hover {
+    color: white;
+  }
+}
+.header--socials {
+  position: absolute;
+  font-size: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  top: 70%;
+  left: -10%;
+}
+.floating-bg {
+  width: 150vw;
+  height: 150vw;
+  background: rgb(226, 25, 107);
+  background: linear-gradient(
+    90deg,
+    rgba(226, 25, 107, 1) 52%,
+    rgba(231, 180, 11, 1) 86%
+  );
+  opacity: 0.8;
+  position: absolute;
+  z-index: 50;
+  top: -125vw;
+  left: -27vw;
+  border-radius: 45%;
+  animation: rotate 30s infinite;
+  &:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgb(121, 20, 60);
+    background: linear-gradient(
+      90deg,
+      rgb(114, 14, 54) 52%,
+      rgb(102, 80, 9) 86%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    border-radius: 40%;
+    animation: rotate 30s infinite;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.scroll--up {
+  position: fixed;
+  font-size: 5rem;
+  top: 80%;
+  right: 10%;
+}
+// ========================MEDIUM DEVICES=================
+@media screen and(max-width:1100px) {
+  .header_container {
+    h1 {
+      font-size: 7rem;
+    }
+    .header--role {
+      font-size: 4rem;
+    }
+  }
+}
+@media screen and(max-width:1042px) {
+  .header_container {
+    padding-top: 2rem;
+    h5 {
+      font-size: 3rem;
+    }
+    h1 {
+      font-size: 5rem;
+    }
+    .header--role {
+      font-size: 2.5rem;
+    }
+  }
+  .header--img {
+    img {
+      width: 40rem;
+      height: 40rem;
+    }
+  }
+  .header--socials {
+    top: 60%;
+    left: 0;
+  }
+}
+// ====================SMALL DEVICES===============
+@media screen and(max-width:600px) {
+  .header_container {
+    padding-top: 1rem;
+    h5 {
+      font-size: 1.5rem;
+      color: wheat;
+    }
+    h1 {
+      font-size: 3rem;
+      color: rgb(255, 255, 255);
+    }
+    .header--role {
+      font-size: 2rem;
+    }
+  }
+  .header--img {
+    img {
+      width: 25rem;
+      height: 25rem;
+    }
+  }
+  .header--socials {
+    font-size: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    position: absolute;
+    top: 110%;
+    left: 30%;
+  }
+  .scroll--up {
+    font-size: 5rem;
+  }
+}

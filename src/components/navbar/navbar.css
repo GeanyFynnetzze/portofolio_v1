@@ -1,0 +1,38 @@
+nav {
+  background: rgba(0, 0, 0, 0.5);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: block;
+  padding: 1.6rem 2rem;
+  z-index: 150;
+  position: fixed;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  border-radius: 50rem;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+}
+
+nav a {
+  background: transparent;
+  padding: 1rem;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 3rem;
+}
+
+nav .active {
+  background-color: rgba(248, 248, 248, 0.356);
+  color: white;
+  border-radius: 3rem;
+}
+/*# sourceMappingURL=navbar.css.map */

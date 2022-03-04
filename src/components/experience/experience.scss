@@ -1,0 +1,125 @@
+.experience--intro {
+  margin: 20rem 0 10rem 0;
+  font-size: 3rem;
+  h2 {
+    font-weight: bold;
+    color: goldenrod;
+  }
+  h5 {
+    color: white;
+  }
+}
+
+.experience--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
+  div {
+    background-color: rgb(27, 155, 155);
+    padding: 2.5rem 4rem;
+    border-radius: 2rem;
+    border: 0.1rem solid transparent;
+  }
+}
+.work--details {
+  margin-right: 20rem;
+}
+.experience--work {
+  outline-style: double;
+  outline-color: rgb(255, 255, 255);
+  outline-width: 1rem;
+  transition: all 0.6s ease;
+  &:hover {
+    box-shadow: 0 0 1rem 1rem rgb(115, 255, 0);
+  }
+  h3 {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+  }
+}
+.work {
+  font-size: 3rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  word-break: keep-all;
+
+  h4 {
+    display: flex;
+    align-items: center;
+    color: rgb(211, 184, 241);
+    text-decoration: underline;
+  }
+  h5 {
+    color: whitesmoke;
+    font-style: oblique;
+    text-align: left;
+  }
+  h6 {
+    color: rgb(190, 180, 180);
+  }
+}
+
+.experience--technologies {
+  outline-style: double;
+  outline-color: rgb(255, 255, 255);
+  outline-width: 1rem;
+  h3 {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+  }
+  transition: all 0.6s ease;
+  &:hover {
+    box-shadow: 0 0 1rem 1rem red;
+  }
+}
+.technologies--details {
+  display: grid;
+  text-transform: capitalize;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.technologies {
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  font-size: 3rem;
+  align-items: center;
+  h4 {
+    margin-left: 1.5rem;
+  }
+}
+
+// MEDIUM DEVICES
+@media screen and(max-width:1630px) {
+  .experience--intro {
+    margin-left: 20rem;
+  }
+}
+@media screen and(max-width:1550px) {
+  .experience--intro {
+    margin-left: 0rem;
+  }
+  .experience--container {
+    display: flex;
+    flex-direction: column;
+  }
+  .work--details {
+    margin-right: 0em;
+  }
+}
+@media screen and(max-width:1024px) {
+}
+// SMALL DEVICES
+@media screen and(max-width:600px) {
+  .technologies--details {
+    display: flex;
+    flex-direction: column;
+  }
+}
