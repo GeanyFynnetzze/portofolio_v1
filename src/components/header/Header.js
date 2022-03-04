@@ -46,7 +46,6 @@ function Header() {
         i = 0;
       }
       const arrayValue = [iconsArray[i]];
-      console.log(arrayValue);
       setActiveIcon(iconsArray[i]);
     }, 3000); // clearing interval
     return () => clearInterval(timer);

@@ -26,7 +26,6 @@ function Contact() {
       );
     e.target.reset();
   };
-  console.log(process.env.REACT_APP_KEY_SERVICE);
   return (
     <section id="contact">
       <div className="contact--intro">
