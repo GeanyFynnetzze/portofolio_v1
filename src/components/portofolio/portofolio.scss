@@ -21,13 +21,61 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: green;
+  background: #200122; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #6f0000,
+    #200122
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #6f0000,
+    #200122
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   padding: 1.5rem;
   border-radius: 2rem;
-  border: 0.1rem solid transparent;
+  opacity: 0.7;
   transition: all 1s ease;
   &:hover {
     border-color: goldenrod;
-    background: transparent;
+    opacity: 1;
+  }
+
+  h3 {
+    margin: 2rem 0;
+    font-size: 2rem;
+    word-wrap: break-word;
+  }
+}
+
+.portofolio--item--img {
+  img {
+    border-radius: 20rem;
+    width: 30rem;
+    height: 30rem;
+  }
+}
+.btn {
+  margin: 0 2rem;
+}
+// MEDIUM DEVICES
+@media screen and(max-width:1220px) {
+  .portofolio--intro {
+    margin-left: 10rem;
+  }
+  .portofolio--container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and(max-width:1220px) {
+}
+// SMALL DEVICES
+@media screen and(max-width:760px) {
+  .portofolio--intro {
+    margin-left: 5rem;
+  }
+  .portofolio--container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }

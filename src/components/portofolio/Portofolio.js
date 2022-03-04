@@ -5,53 +5,62 @@ function Portofolio() {
   const projectsArray = [
     {
       id: 0,
-      title: 'Title of the project',
-      image:
-        'https://i.postimg.cc/TwrZjLLv/d64e2a027a6d7567501995ba23a70eda46c0afb6-full.jpg',
-      github: 'Intern Database&Oracle',
-      live: '6 months',
+      title: 'Android App(Bachelor project)',
+      image: 'https://i.postimg.cc/k4Qxv8QC/unknown.png',
+      github: 'https://github.com/BorislavAleksiev/IrrigationAppV2',
+      live: 'https://www.youtube.com/watch?v=XGzWSOH20Y0',
     },
     {
       id: 1,
-      title: 'Title of the project',
-      image:
-        'https://i.postimg.cc/TwrZjLLv/d64e2a027a6d7567501995ba23a70eda46c0afb6-full.jpg',
-      github: 'Intern Database&Oracle',
-      live: '6 months',
+      title: 'VR Mechanics',
+      image: 'https://i.postimg.cc/mgTXKLXB/unknown.png',
+      github: 'https://github.com/BorislavAleksiev/MIX_XR_Mechanics',
+      live: 'https://youtu.be/HFc9EhwNZRE',
     },
     {
       id: 2,
-      title: 'Title of the project',
-      image:
-        'https://i.postimg.cc/TwrZjLLv/d64e2a027a6d7567501995ba23a70eda46c0afb6-full.jpg',
-      github: 'Intern Database&Oracle',
-      live: '6 months',
+      title: 'AR Dragon app',
+      image: 'https://i.postimg.cc/B6pRw8sW/unknown.png',
+      github: 'https://github.com/GeanyFynnetzze/DragonThingAR',
+      live: 'https://www.youtube.com/watch?v=U70yxOzTTvw',
     },
     {
       id: 3,
-      title: 'Title of the project',
-      image:
-        'https://i.postimg.cc/TwrZjLLv/d64e2a027a6d7567501995ba23a70eda46c0afb6-full.jpg',
-      github: 'Intern Database&Oracle',
-      live: '6 months',
+      title: 'Unity Game',
+      image: 'https://i.postimg.cc/wjSzhsx0/unknown.png',
+      github: 'https://github.com/GeanyFynnetzze/UnityGame',
+      youtube: 'https://www.youtube.com/watch?v=8WWL2mXS0rQ',
     },
     {
       id: 4,
-      title: 'Title of the project',
-      image:
-        'https://i.postimg.cc/TwrZjLLv/d64e2a027a6d7567501995ba23a70eda46c0afb6-full.jpg',
-      github: 'Intern Database&Oracle',
-      live: '6 months',
+      title: 'React meme app',
+      image: 'https://i.postimg.cc/yY1pb6rB/unknown.png',
+      github: 'https://github.com/GeanyFynnetzze/memes-app',
+      live: 'https://app-meme-generator.netlify.app/',
     },
     {
       id: 5,
-      title: 'Title of the project',
-      image:
-        'https://i.postimg.cc/TwrZjLLv/d64e2a027a6d7567501995ba23a70eda46c0afb6-full.jpg',
-      github: 'Intern Database&Oracle',
+      title: 'React calculator',
+      image: 'https://i.postimg.cc/KzcgyVXK/unknown.png',
+      github: 'https://github.com/GeanyFynnetzze/react-calculator',
+      live: 'https://react-calculator-testapp.netlify.app/',
+    },
+    {
+      id: 6,
+      title: 'VanillaJs Restaurant',
+      image: 'https://i.postimg.cc/1tXgkg2x/unknown.png',
+      github: 'https://github.com/GeanyFynnetzze/VanillaJsMenu',
       live: '',
     },
+    {
+      id: 7,
+      title: 'Review section test(react)',
+      image: 'https://i.postimg.cc/WzF7vpt3/unknown.png',
+      github: 'https://github.com/GeanyFynnetzze/review-app',
+      live: 'https://review-app-react.netlify.app/',
+    },
   ];
+
   const projectElement = projectsArray
     .sort()
     .reverse()

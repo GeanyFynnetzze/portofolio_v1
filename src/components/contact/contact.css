@@ -1,1 +1,198 @@
-/* No CSS *//*# sourceMappingURL=contact.css.map */
+.contact--intro {
+  margin: 20rem 0 10rem 0;
+  font-size: 3rem;
+}
+
+.contact--intro h5 {
+  color: white;
+}
+
+.contact--intro h2 {
+  color: goldenrod;
+  font-weight: bold;
+}
+
+.contact--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.contact--img {
+  position: absolute;
+  left: -15%;
+  top: -10%;
+  width: 40rem;
+}
+
+.contact--img img {
+  border-radius: 3rem;
+}
+
+.contact--logo {
+  font-size: 10rem;
+  position: absolute;
+  top: -10%;
+}
+
+.contact--form {
+  border-radius: 2rem;
+  width: 70rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3rem;
+  background: rgba(51, 81, 126, 0.171);
+  padding: 10rem 3rem;
+}
+
+.form--name {
+  opacity: 1;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form--email {
+  opacity: 1;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+label {
+  margin-right: 5rem;
+  color: black;
+}
+
+input {
+  margin-right: 15rem;
+  padding: 1.5rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 0.2rem solid white;
+  resize: none;
+  font-size: 2rem;
+  color: black;
+}
+
+.form--message {
+  opacity: 1;
+  font-size: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+}
+
+.form--message label {
+  margin-right: 5rem;
+  color: black;
+  padding-left: 1.4rem;
+}
+
+.form--message textarea {
+  margin-right: 20rem;
+  width: 30rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 0.2rem solid white;
+  resize: vertical;
+  max-height: 30rem;
+  font-size: 2rem;
+  color: black;
+}
+
+@media screen and (max-width: 1550px) {
+  .contact--img {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .contact--img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .contact--form {
+    width: 50rem;
+  }
+  .form--name {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form--name label {
+    padding: 0;
+    margin: 0;
+  }
+  .form--email {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form--email label {
+    padding: 0;
+    margin: 0;
+  }
+  input {
+    margin: 0;
+  }
+  .form--message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+  }
+  .form--message label {
+    padding: 0;
+    margin: 0;
+  }
+  .form--message textarea {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .contact--form {
+    width: 35rem;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

@@ -2,6 +2,11 @@ import React from 'react';
 import testImg from '../../assets/imgv2.png';
 
 function PortofolioItem(props) {
+  const checkLink = () => {
+    if (props.live.includes('https://app.netlify.com')) {
+      return 'Web';
+    } else return 'Youtube';
+  };
   return (
     <article className="portofolio--item">
       <div className="portofolio--item--img">
@@ -16,7 +21,7 @@ function PortofolioItem(props) {
           ''
         ) : (
           <a href={props.live} className="btn btn-primary">
-            Demo
+            More
           </a>
         )}
       </div>

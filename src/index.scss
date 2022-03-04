@@ -28,17 +28,18 @@ html {
 
 body {
   font-family: 'Kanit', sans-serif;
-  background: #2193b0; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #6dd5ed,
-    #2193b0
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #6dd5ed,
-    #2193b0
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // background: #2193b0; /* fallback for old browsers */
+  // background: -webkit-linear-gradient(
+  //   to right,
+  //   #6dd5ed,
+  //   #2193b0
+  // ); /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(
+  //   to right,
+  //   #6dd5ed,
+  //   #2193b0
+  // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #d4d2d3;
 
   line-height: 1.5;
 }
@@ -66,24 +67,19 @@ section {
 }
 a {
   color: #daa520;
-  transition: all 600 ms;
-  &:hover {
-    color: rgb(248, 242, 242);
-  }
 }
 .btn {
+  background: rgb(255, 255, 255);
   width: max-content;
   display: inline-block;
-  color: #daa520;
+  font-size: 2rem;
+  color: #000000;
   padding: 1rem 1.5rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  border: 0.1rem solid red;
-  transition: all 400 ms;
+  transition: all 0.4s ease;
   &:hover {
-    background: red;
-    color: gold;
-    border-color: transparent;
+    box-shadow: 0 0 0.5rem 0.5rem rgb(255, 255, 255);
   }
 }
 img {

@@ -1,0 +1,147 @@
+.contact--intro {
+  margin: 20rem 0 10rem 0;
+  font-size: 3rem;
+  h5 {
+    color: white;
+  }
+  h2 {
+    color: goldenrod;
+    font-weight: bold;
+  }
+}
+.contact--container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.contact--img {
+  position: absolute;
+  left: -15%;
+  top: -10%;
+  width: 40rem;
+  img {
+    border-radius: 3rem;
+  }
+}
+.contact--logo {
+  font-size: 10rem;
+  position: absolute;
+  top: -10%;
+}
+.contact--form {
+  border-radius: 2rem;
+  width: 70rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  background: rgba(51, 81, 126, 0.171);
+
+  padding: 10rem 3rem;
+}
+
+.form--name {
+  opacity: 1;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.form--email {
+  opacity: 1;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+}
+label {
+  margin-right: 5rem;
+  color: black;
+}
+input {
+  margin-right: 15rem;
+  padding: 1.5rem;
+  width: 30rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 0.2rem solid rgb(255, 255, 255);
+  resize: none;
+  font-size: 2rem;
+  color: rgb(0, 0, 0);
+}
+.form--message {
+  opacity: 1;
+  font-size: 3rem;
+  display: flex;
+  align-items: right;
+  label {
+    margin-right: 5rem;
+    color: black;
+    padding-left: 1.4rem;
+  }
+  textarea {
+    margin-right: 20rem;
+    width: 30rem;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 0.2rem solid rgb(255, 255, 255);
+    resize: vertical;
+    max-height: 30rem;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+  }
+}
+
+// MEDIUM DEVICES
+@media screen and(max-width:1550px) {
+  .contact--img {
+    width: 30rem;
+  }
+}
+@media screen and(max-width:1350px) {
+  .contact--img {
+    display: none;
+  }
+}
+// SMALL DEVICES
+@media screen and(max-width:750px) {
+  .contact--form {
+    width: 50rem;
+  }
+  .form--name {
+    flex-direction: column;
+    label {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .form--email {
+    flex-direction: column;
+    label {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  input {
+    margin: 0;
+  }
+  .form--message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    label {
+      padding: 0;
+      margin: 0;
+    }
+    textarea {
+      margin: 0;
+    }
+  }
+}
+@media screen and(max-width:515px) {
+  .contact--form {
+    width: 35rem;
+  }
+}

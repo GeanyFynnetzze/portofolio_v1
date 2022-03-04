@@ -40,6 +40,11 @@
     text-decoration: underline;
   }
 }
+.experience--work--content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .work {
   font-size: 3rem;
   display: flex;
