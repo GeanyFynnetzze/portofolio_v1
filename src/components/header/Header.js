@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import myImg from '../../assets/imgv2.png';
 import './header.css';
 import { AiFillHtml5 } from 'react-icons/ai';
 import {
