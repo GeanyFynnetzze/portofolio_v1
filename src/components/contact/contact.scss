@@ -145,3 +145,12 @@ input {
     width: 35rem;
   }
 }
+@media screen and(max-width:500px) {
+  .contact--intro {
+    font-size: 2rem;
+  }
+  .contact--logo {
+    font-size: 7rem;
+    top: -5%;
+  }
+}

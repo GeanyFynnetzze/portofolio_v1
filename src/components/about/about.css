@@ -5,11 +5,11 @@
 }
 
 .about--intro h5 {
-  color: white;
+  color: #ffffff;
 }
 
 .about--intro h2 {
-  color: goldenrod;
+  color: #dca11d;
   font-weight: bold;
 }
 
@@ -31,6 +31,10 @@
   width: 80rem;
 }
 
+.about--info p {
+  color: #ffffff;
+}
+
 .about--me {
   margin-left: 5rem;
   position: relative;
@@ -40,11 +44,12 @@
   position: relative;
   z-index: 100;
   width: 40rem;
+  aspect-ratio: 1/1;
   border-width: 0.3rem;
   border-style: solid;
   border-color: black;
   background-color: wheat;
-  border-radius: 40rem 5rem 5rem 5rem;
+  border-radius: 40rem;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   -webkit-transform: rotateY(30deg) skewX(-4deg) translateY(-3rem);
@@ -76,7 +81,7 @@
 }
 
 .span--intro {
-  color: #eb7474;
+  color: #f85555;
   font-style: italic;
   font-weight: bold;
 }
@@ -102,7 +107,7 @@
   border-style: solid;
   border: none;
   border-radius: 3rem;
-  background-color: #1364ce;
+  background-color: #8fa0be;
   opacity: 0.6;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
@@ -116,8 +121,8 @@
 
 .about--card:hover {
   opacity: 1;
-  -webkit-box-shadow: 0rem 0rem 1rem 1rem gold;
-          box-shadow: 0rem 0rem 1rem 1rem gold;
+  -webkit-box-shadow: 0rem 0rem 1rem 1rem #ffffff;
+          box-shadow: 0rem 0rem 1rem 1rem #ffffff;
 }
 
 .about--ui {
@@ -157,7 +162,8 @@
             justify-content: center;
   }
   .about--me {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
+    padding-right: 5rem;
   }
   .about--me img {
     -webkit-transform: rotateY(0) skewX(0) translateY(0);
@@ -202,6 +208,20 @@
     text-align: center;
     width: 50%;
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .about--info p {
+    margin-left: 25rem;
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .about--info p {
+    margin-left: 30rem;
+    width: 25%;
   }
 }
 /*# sourceMappingURL=about.css.map */

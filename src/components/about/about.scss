@@ -1,12 +1,14 @@
+@import '../../utilities/variables';
+
 .about--intro {
   font-size: 3rem;
   padding-top: 10rem;
   margin: 10rem 0;
   h5 {
-    color: white;
+    color: $accent--color;
   }
   h2 {
-    color: goldenrod;
+    color: $secondary--color;
     font-weight: bold;
   }
 }
@@ -21,6 +23,9 @@
   text-align: left;
   font-size: 3rem;
   width: 80rem;
+  p {
+    color: $accent--color;
+  }
 }
 .about--me {
   margin-left: 5rem;
@@ -30,11 +35,12 @@
     position: relative;
     z-index: 100;
     width: 40rem;
+    aspect-ratio: 1/1;
     border-width: 0.3rem;
     border-style: solid;
     border-color: rgb(0, 0, 0);
     background-color: wheat;
-    border-radius: 40rem 5rem 5rem 5rem;
+    border-radius: 40rem;
     transition: all 0.5s ease;
     transform: rotateY(30deg) skewX(-4deg) translateY(-3rem);
     &:hover {
@@ -55,7 +61,7 @@
   font-weight: bold;
 }
 .span--intro {
-  color: rgb(235, 116, 116);
+  color: rgb(248, 85, 85);
   font-style: italic;
   font-weight: bold;
 }
@@ -78,7 +84,7 @@
   border-style: solid;
   border: none;
   border-radius: 3rem;
-  background-color: rgb(19, 100, 206);
+  background-color: $main--gradient;
   opacity: 0.6;
   transition: all 0.6s ease;
   h5 {
@@ -89,7 +95,7 @@
 
   &:hover {
     opacity: 1;
-    box-shadow: 0rem 0rem 1rem 1rem gold;
+    box-shadow: 0rem 0rem 1rem 1rem $accent--color;
   }
 }
 .about--ui {
@@ -127,7 +133,8 @@
     justify-content: center;
   }
   .about--me {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
+    padding-right: 5rem;
     img {
       transform: rotateY(0) skewX(0) translateY(0);
     }
@@ -168,6 +175,23 @@
       text-align: center;
       width: 50%;
       font-size: 2rem;
+    }
+  }
+}
+
+@media screen and(max-width:375px) {
+  .about--info {
+    p {
+      margin-left: 25rem;
+      width: 40%;
+    }
+  }
+}
+@media screen and(max-width:300px) {
+  .about--info {
+    p {
+      margin-left: 30rem;
+      width: 25%;
     }
   }
 }

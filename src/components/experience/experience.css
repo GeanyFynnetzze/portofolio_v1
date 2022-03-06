@@ -184,4 +184,24 @@
             flex-direction: column;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .experience--intro {
+    font-size: 2rem;
+  }
+  .experience--container div {
+    font-size: 2rem;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .experience--container div {
+    font-size: 1.5rem;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+  }
+}
 /*# sourceMappingURL=experience.css.map */

@@ -27,14 +27,14 @@ html::-webkit-scrollbar {
 
 body {
   font-family: 'Kanit', sans-serif;
-  background: #d4d2d3;
+  background: #5c6d89;
   line-height: 1.5;
 }
 
 .container {
   width: 75%;
   margin: 0 auto;
-  color: white;
+  color: #dca11d;
 }
 
 h1,
@@ -46,27 +46,31 @@ h5 {
 }
 
 section {
+  background: #5c6d89;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(5%, #5c6d89), color-stop(50%, #ddf2ff), color-stop(99%, #5c6d89));
+  background: linear-gradient(360deg, #5c6d89 5%, #ddf2ff 50%, #5c6d89 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5c6d89",endColorstr="#5c6d89",GradientType=1);
   margin-top: 8rem;
 }
 
 section h2,
 section h5 {
   text-align: center;
-  color: gray;
+  color: #ffffff;
 }
 
 a {
-  color: #daa520;
+  color: #ffffff;
 }
 
 .btn {
-  background: white;
+  background: #dca11d;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   display: inline-block;
   font-size: 2rem;
-  color: #000000;
+  color: #ffffff;
   padding: 1rem 1.5rem;
   border-radius: 0.5rem;
   cursor: pointer;

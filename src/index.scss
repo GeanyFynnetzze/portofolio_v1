@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap');
-
-// VARIABLES
-$bg--color: rgb(71, 69, 69);
-// END OF VARIABLES
+@import './utilities/variables';
 
 * {
   margin: 0;
@@ -28,18 +25,7 @@ html {
 
 body {
   font-family: 'Kanit', sans-serif;
-  // background: #2193b0; /* fallback for old browsers */
-  // background: -webkit-linear-gradient(
-  //   to right,
-  //   #6dd5ed,
-  //   #2193b0
-  // ); /* Chrome 10-25, Safari 5.1-6 */
-  // background: linear-gradient(
-  //   to right,
-  //   #6dd5ed,
-  //   #2193b0
-  // ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: #d4d2d3;
+  background: $main--color;
 
   line-height: 1.5;
 }
@@ -48,7 +34,7 @@ body {
 .container {
   width: 75%;
   margin: 0 auto;
-  color: white;
+  color: $secondary--color;
 }
 h1,
 h2,
@@ -58,22 +44,43 @@ h5 {
   font-weight: 500;
 }
 section {
+  background: rgb(92, 109, 137);
+  background: -moz-linear-gradient(
+    360deg,
+    rgba(92, 109, 137, 1) 5%,
+    rgba(221, 242, 255, 1) 50%,
+    rgba(92, 109, 137, 1) 99%
+  );
+  background: -webkit-linear-gradient(
+    360deg,
+    rgba(92, 109, 137, 1) 5%,
+    rgba(221, 242, 255, 1) 50%,
+    rgba(92, 109, 137, 1) 99%
+  );
+  background: linear-gradient(
+    360deg,
+    rgba(92, 109, 137, 1) 5%,
+    rgba(221, 242, 255, 1) 50%,
+    rgba(92, 109, 137, 1) 99%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5c6d89",endColorstr="#5c6d89",GradientType=1);
   margin-top: 8rem;
   h2,
   h5 {
     text-align: center;
-    color: gray;
+    color: $accent--color;
   }
 }
+
 a {
-  color: #daa520;
+  color: $accent--color;
 }
 .btn {
-  background: rgb(255, 255, 255);
+  background: $secondary--color;
   width: max-content;
   display: inline-block;
   font-size: 2rem;
-  color: #000000;
+  color: $accent--color;
   padding: 1rem 1.5rem;
   border-radius: 0.5rem;
   cursor: pointer;

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap");
 .header_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,7 +12,7 @@
           align-items: center;
   padding-top: 5rem;
   position: relative;
-  height: 100%;
+  height: 90rem;
   z-index: 100;
 }
 
@@ -51,23 +52,26 @@
 }
 
 .falseIcon {
-  display: none;
+  margin-top: 28rem;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  position: absolute;
+  -webkit-transition: all 1 ease-in;
+  transition: all 1 ease-in;
 }
 
 .activeIcon {
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 28rem;
-  font-size: 20rem;
+  font-size: 25rem;
   color: goldenrod;
-  -webkit-transition: font-size 0.3s ease-out;
-  transition: font-size 0.3s ease-out;
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-.activeIcon:hover {
-  color: white;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
 }
 
 .header--socials {
@@ -91,9 +95,7 @@
 .floating-bg {
   width: 150vw;
   height: 150vw;
-  background: #e2196b;
-  background: -webkit-gradient(linear, left top, right top, color-stop(52%, #e2196b), color-stop(86%, #e7b40b));
-  background: linear-gradient(90deg, #e2196b 52%, #e7b40b 86%);
+  background: #dca11d;
   opacity: 0.8;
   position: absolute;
   z-index: 50;
@@ -108,9 +110,7 @@
   content: '';
   width: 100%;
   height: 100%;
-  background: #79143c;
-  background: -webkit-gradient(linear, left top, right top, color-stop(52%, #720e36), color-stop(86%, #665009));
-  background: linear-gradient(90deg, #720e36 52%, #665009 86%);
+  background: #dca11d;
   position: absolute;
   top: 0;
   left: 0;
@@ -156,6 +156,9 @@
   .header_container .header--role {
     font-size: 4rem;
   }
+  .activeIcon {
+    font-size: 20rem;
+  }
 }
 
 @media screen and (max-width: 1042px) {
@@ -181,6 +184,16 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .activeIcon {
+    font-size: 15rem;
+  }
+  .header--socials {
+    top: 50%;
+    left: 0;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .header_container {
     padding-top: 1rem;
@@ -201,7 +214,7 @@
     height: 25rem;
   }
   .header--socials {
-    font-size: 3.5rem;
+    font-size: 4rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -211,11 +224,23 @@
             flex-direction: row;
     gap: 2rem;
     position: absolute;
-    top: 110%;
-    left: 30%;
+    top: 70%;
+    left: 33%;
   }
   .scroll--up {
     font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header--socials {
+    left: 28%;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .header--socials {
+    left: 15%;
   }
 }
 /*# sourceMappingURL=header.css.map */

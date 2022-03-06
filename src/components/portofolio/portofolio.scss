@@ -79,3 +79,21 @@
     grid-template-columns: repeat(1, 1fr);
   }
 }
+@media screen and(max-width:500px) {
+  .portofolio--intro {
+    font-size: 2rem;
+    padding-right: 3rem;
+  }
+}
+@media screen and(max-width:360px) {
+  .portofolio--item {
+    width: 30rem;
+  }
+  .portofolio--item--img {
+    img {
+      border-radius: 20rem;
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+}

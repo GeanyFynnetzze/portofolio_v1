@@ -1,52 +1,41 @@
+@import '../../utilities/variables';
+
 footer {
   border-top-width: 0.2rem;
   border-style: groove;
-  background: #686c74;
+  background: rgb(104, 108, 116);
   padding: 5rem 0;
   text-align: center;
   font-size: 1.5rem;
   margin-top: 10rem;
 }
-
 .footer--logo {
   padding-right: 3rem;
   font-size: 4rem;
   font-weight: 500;
   display: block;
 }
-
 .footer--permalinks {
   margin: 5rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
-
 .footer--copyright {
   padding-bottom: 10rem;
   padding-right: 3rem;
   letter-spacing: 0.3rem;
 }
 
-@media screen and (max-width: 400px) {
+// SMALL DEVICES
+@media screen and(max-width:400px) {
   .footer--logo,
   .footer--copyright {
     padding: 0;
   }
   .footer--permalinks {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 2rem;
   }
 }
-/*# sourceMappingURL=footer.css.map */
