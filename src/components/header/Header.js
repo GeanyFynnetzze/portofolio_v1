@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import myImg from '../../assets/imgv2.png';
 import './header.css';
-import { BsFillArrowUpCircleFill } from 'react-icons/bs';
 import { AiFillHtml5 } from 'react-icons/ai';
 import {
   SiCss3,
