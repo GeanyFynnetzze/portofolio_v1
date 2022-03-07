@@ -91,9 +91,19 @@
   }
   .portofolio--item--img {
     img {
-      border-radius: 20rem;
-      width: 20rem;
-      height: 20rem;
+      max-width: auto;
+      aspect-ratio: 1/1;
+    }
+  }
+}
+@media screen and(max-width:320px) {
+  .portofolio--item {
+    width: 20rem;
+  }
+  .portofolio--item--img {
+    img {
+      max-width: 15rem;
+      aspect-ratio: 1/1;
     }
   }
 }

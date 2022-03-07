@@ -51,6 +51,7 @@ function Header() {
   return (
     <header>
       <div className="floating-bg"></div>
+
       <div className="container header_container">
         <h5>Hi, my name is</h5>
         <h1>{name}</h1>
@@ -82,9 +83,6 @@ function Header() {
             className={activeIcon === 'mongo' ? 'activeIcon' : 'falseIcon'}
           />
         </div>
-        {/* <div className="header--img">
-          <img src={myImg} alt="my Photo" />
-        </div> */}
       </div>
     </header>
   );

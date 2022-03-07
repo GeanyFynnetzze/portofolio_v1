@@ -9,6 +9,8 @@
   outline: 0;
   list-style: none;
   text-decoration: none;
+  outline: 1px red solid !important;
+  visibility: visible !important;
 }
 
 html {
@@ -26,7 +28,6 @@ html {
 body {
   font-family: 'Kanit', sans-serif;
   background: $main--color;
-
   line-height: 1.5;
 }
 

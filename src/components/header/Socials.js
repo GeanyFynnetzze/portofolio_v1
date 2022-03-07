@@ -3,13 +3,13 @@ import { FaLinkedin, FaFacebook, FaGithub } from 'react-icons/fa';
 function hSocials() {
   return (
     <div className="header--socials">
-      <a href="https://linkedin.com/in/varban-catalin" target="_blank">
+      <a target="_blank" href="https://linkedin.com/in/varban-catalin">
         <FaLinkedin />
       </a>
-      <a href="https://github.com/GeanyFynnetzze" target="_blank">
+      <a target="_blank" href="https://github.com/GeanyFynnetzze">
         <FaGithub />
       </a>
-      <a href="https://www.facebook.com/catalin.varban.376/" target="_blank">
+      <a target="_blank" href="https://www.facebook.com/catalin.varban.376/">
         <FaFacebook />
       </a>
     </div>

@@ -9,6 +9,7 @@ function Navbar() {
     <nav>
       <a
         href="#"
+        aria-label="first tab"
         className={active === '#' ? 'active' : ''}
         onClick={() => setActive('#')}
       >
@@ -16,6 +17,7 @@ function Navbar() {
       </a>
       <a
         href="#about"
+        aria-label="second tab"
         onClick={() => setActive('#about')}
         className={active === '#about' ? 'active' : ''}
       >
@@ -23,6 +25,7 @@ function Navbar() {
       </a>
       <a
         href="#experience"
+        aria-label="third tab"
         onClick={() => setActive('#experience')}
         className={active === '#experience' ? 'active' : ''}
       >
@@ -30,6 +33,7 @@ function Navbar() {
       </a>
       <a
         href="#portofolio"
+        aria-label="forth tab"
         onClick={() => setActive('#portofolio')}
         className={active === '#portofolio' ? 'active' : ''}
       >
@@ -37,6 +41,7 @@ function Navbar() {
       </a>
       <a
         href="#contact"
+        aria-label="fifth tab"
         onClick={() => setActive('#contact')}
         className={active === '#contact' ? 'active' : ''}
       >

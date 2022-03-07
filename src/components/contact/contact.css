@@ -205,4 +205,10 @@ input {
     top: -5%;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .contact--form {
+    width: auto;
+  }
+}
 /*# sourceMappingURL=contact.css.map */

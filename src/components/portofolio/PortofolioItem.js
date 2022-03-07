@@ -10,7 +10,7 @@ function PortofolioItem(props) {
   return (
     <article className="portofolio--item">
       <div className="portofolio--item--img">
-        <img src={props.image} />
+        <img src={props.image} alt="Project Cover" />
       </div>
       <h3>{props.title}</h3>
       <div className="portofolio--links">
