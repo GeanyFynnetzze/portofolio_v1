@@ -25,6 +25,7 @@
   width: 80rem;
   p {
     color: $accent--color;
+    width: 120%;
   }
 }
 .about--me {
@@ -76,7 +77,7 @@
   font-weight: bold;
 }
 .about--card {
-  width: 30rem;
+  width: auto;
   text-align: center;
   margin: 0 2rem;
   padding: 5rem;
@@ -91,6 +92,7 @@
     color: white;
     text-align: center;
     font-size: 2rem;
+    width: 5rem;
   }
 
   &:hover {
@@ -146,6 +148,7 @@
     width: 60rem;
     p {
       text-align: center;
+      width: 100%;
     }
   }
   .about--cards {

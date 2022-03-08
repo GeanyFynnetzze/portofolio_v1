@@ -1,6 +1,6 @@
 import React from 'react';
 import './contact.css';
-import banner from '../../assets/banner.png';
+import banner from '../../assets/bannerv2.webp';
 import { AiFillMessage } from 'react-icons/ai';
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';

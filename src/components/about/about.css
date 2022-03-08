@@ -33,6 +33,7 @@
 
 .about--info p {
   color: #ffffff;
+  width: 120%;
 }
 
 .about--me {
@@ -99,7 +100,7 @@
 }
 
 .about--card {
-  width: 30rem;
+  width: auto;
   text-align: center;
   margin: 0 2rem;
   padding: 5rem;
@@ -117,6 +118,7 @@
   color: white;
   text-align: center;
   font-size: 2rem;
+  min-width: 10rem;
 }
 
 .about--card:hover {
@@ -177,6 +179,7 @@
   }
   .about--info p {
     text-align: center;
+    width: 100%;
   }
   .about--cards {
     margin-left: 5rem;
