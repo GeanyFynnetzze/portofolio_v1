@@ -5,16 +5,19 @@ import { AiFillMessage } from 'react-icons/ai';
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 function Contact() {
+  let REACT_APP_KEY_SERVICE = '';
+  let REACT_APP_KEY_TEMPLATE = '';
+  let REACT_APP_KEY_USER = '';
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        process.env.REACT_APP_KEY_SERVICE,
-        process.env.REACT_APP_KEY_TEMPLATE,
+        REACT_APP_KEY_SERVICE,
+        REACT_APP_KEY_TEMPLATE,
         form.current,
-        process.env.REACT_APP_KEY_USER
+        REACT_APP_KEY_USER
       )
       .then(
         (result) => {
